@@ -1,0 +1,72 @@
+<template>
+  <div class="stamp">
+      <div class="stamp_circ">
+        <div class="circ blink1"></div>
+        <div class="circ blink2"></div>
+        <div class="circ blink3"></div>
+      </div>
+      <div class="stamp_text"><h4>author: Гречишников Олег</h4><h4>Test task on Vue2</h4></div>
+    </div>
+</template>
+
+<script>
+export default {
+  name: 'MyStamp',
+}
+</script>
+
+<style>
+  .stamp{
+  width: 96%;
+  margin: 0px auto;
+  background: #c8f7ef;
+  border: 1px solid #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+  .stamp_circ { margin-right: 3%;}
+    .circ {
+      width: 14px;
+      height: 14px;
+      margin: 1px;
+      margin-top: 10px;
+      border-radius: 7px;
+      background: #a5e5da;
+      display:inline-block;
+    }
+    .blink1 {animation: circ1  4s ease infinite 0s;}
+    .blink2 {animation: circ2  4s ease infinite 0s;}
+    .blink3 {animation: circ3  4s ease infinite 0s;}
+    .stamp_text {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+    }
+      h4 {margin:0; padding: 0;}
+@keyframes circ1 {
+  0% { background: #a5e5da;}
+  12.5% {background: blue;}
+  18.75% {background: blue;}
+  25% {background: #a5e5da;}
+  100% { background: #a5e5da;}
+}
+@keyframes circ2 {
+  0% { background: #a5e5da;}
+  31.25% { background: #a5e5da;}
+  37.5% {background: blue;}
+  43.75% {background: blue;}
+  50% {background: #a5e5da;}
+  100% { background: #a5e5da;}
+}
+@keyframes circ3 {
+  0% { background: #a5e5da;}
+  56.25% { background: #a5e5da;}
+  62.5% {background: blue;}
+  68.75% {background: blue;}
+  75% {background: #a5e5da;}  
+  100% { background: #a5e5da;}
+}
+</style>
