@@ -21,5 +21,5 @@
 
 ### Полный перечень требований к ТеЗ [здесь](https://docs.google.com/document/d/1OuFXPfwIc1cvX4gz6eYITBbtMD0cHtUaGk_umZphx7o/edit?usp=sharing)
 
-#### Посмотреть, что вышло у меня [здесь]( https://gronickwork.github.io/crud-vue-e-kurkov/)
+#### Посмотреть, что вышло у меня [здесь](  https://gronickwork.github.io/vue-crud-project/)
 
