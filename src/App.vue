@@ -4,34 +4,42 @@
     <div id="app">
       <main-to-do />
     </div>
-  </div>   
+  </div>
 </template>
 
 <script>
-import MainToDo from './components/ToDos/MainToDo.vue';
-import Stamp from './components/Stamp.vue';
+import MainToDo from "./components/ToDos/MainToDo.vue";
+import Stamp from "./components/Stamp.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Stamp,
-    MainToDo
-  }
-}
+    MainToDo,
+  },
+};
 </script>
 
 <style scoped>
-body {margin: 0; padding: 0;}
-* {box-sizing: border-box;}
-  .container {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    padding-top:5px;
-    text-align: center;
-    background: #FFFADB;
-    color: blue;
-  }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding-top: 5px;
+  text-align: center;
+  background: #fffadb;
+  color: blue;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
